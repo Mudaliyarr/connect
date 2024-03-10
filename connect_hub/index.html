@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CONNECT_HUB</title>
+    <link rel="website icon"  href="1708532397113ayvopfco.jpg">
+   
+</head>
+<body>
+    <div class="wrapper">
+        <!-- NAVIGATION -->
+        <nav class="main-nav">
+            <div class="logo">
+                <a> 
+                    <img src="1708532397113ayvopfco.jpg" alt="Your Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVIGATION END -->
+        <div class="main-container">
+            <header class="description">
+                <h1>online food order</h1>
+                <h2>are you hungry?<br></h2>
+                <h4>don't wait!!!<br>let start to order food now!</h4>
+                <a href="#menu" class="btn">check menu</a>
+            </header>
+        </div>
+        <!-- MAIN CONTAINER END -->
+        <div class="features">
+            <div class="box1">
+                <a href="offer.html"><i class="fas fa-gift fa-4x"></i></a>
+                <p>OFFERS</p> 
+            </div>
+        </div>
+        <!-- BOX END -->
+        <!--menu-->
+        <h1 id="menu"></h1>
+        <div class="hi">MENU</div>
+        <div class="image-container">
+            <div class="single-menu">
+                <img src="chowwww.jpeg" alt="CHOW">
+                <div class="menu-content">
+                    <h5>CHICKEN</h5>
+                    <h5>CHOW MEIN</h5>
+                    <p>Price: ₹60</p>
+                    <button onclick="addToCart('Chow Mein', 60)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="paratta.jpg" alt="POROTTA">
+                <div class="menu-content">
+                    <h5>POROTTA</h5>
+                    <p>Price: ₹40</p>
+                    <button onclick="addToCart('Porotta', 40)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="OIP.jpeg" alt="CHANNA">
+                <div class="menu-content">
+                    <h5>CHANNA</h5>
+                    <p>Price: ₹50</p>
+                    <button onclick="addToCart('Channa', 50)">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+            <!-- Repeat this block for each pair of images -->
+        </div>
+        <!-- Cart Section -->
+        <div id="cart-container">
+            <h2>YOUR CART</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+            <button class="okk"onclick="deleteFromCart()">Clear Cart</button>
+            <button class="okk2"onclick="orderViaWhatsApp()">Buy now</button>
+        </div>
+        <!--form-->
+        <!--about us--> 
+        <div id="aboutus">
+            <h1 class="u">Welcome to Our Student Food Ordering Platform!</h1>
+            <p class="s">As dedicated students pursuing Computer Science in our second year, fourth semester, we found ourselves immersed in an exciting vocational course on entrepreneurship. Alongside our talented teammates – Prashant, Priya, Lika, Noksensangla, and Renponthung – we embarked on a collaborative journey. Together, we envisioned an innovative solution to address the hunger pangs of our fellow students during the bustling lunch break.</p>
+        </div>
+        <!--  QUICK SEARCH END  -->
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/0connect_hub0" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Connect__Hub. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
